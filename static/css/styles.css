@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    /* Исправление ошибки 1 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.animated-bg {
+    position: absolute;
+    filter: blur(10px);
+    opacity: 0.2;
+    animation: float 15s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(100px, -100px) rotate(90deg); }
+    50% { transform: translate(0, 0) rotate(180deg); }
+    75% { transform: translate(-100px, 100px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+.pulse {
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.02);
+}
+
+.language-toggle {
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.language-toggle:hover {
+    transform: scale(1.1);
+}
