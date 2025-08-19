@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Advanced OSINT Bot for Telegram. Powerful intelligence gathering tools for security professionals, researchers, and investigators. Username search, IP geolocation, email search, and more.">
     <meta name="keywords" content="Sniffle, OSINT, Telegram Bot, Intelligence, Investigation, Security, Research, Username Search, IP Geolocation, Email Search, Blackbird OSINT">
+    <meta name="author" content="Bebrowskiy">
     <meta property="og:title" content="Sniffle - Advanced OSINT Tools for Telegram">
     <meta property="og:description" content="Powerful intelligence gathering tools built for security professionals, researchers, and investigators. Access comprehensive data across multiple platforms directly from Telegram.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:url" content="https://sniffle-bot.github.io/">
     <meta name="theme-color" content="#8b5cf6">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sniffle</title>
@@ -20,13 +21,13 @@
     <!-- Header -->
     <header class="px-6 py-4 flex justify-between items-center bg-white dark:bg-gray-800 shadow-sm">
         <div class="flex items-center space-x-2">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center">
-                <span class="text-white font-bold text-xl">{/}</span>
-            </div>
-            <h1 class="text-xl font-bold">Sniffle</h1>
+            <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200 ease-in-out">
+                <!-- logo -->
+                <img src="static/images/sniffle-logo.png" alt="Sniffle Bot Logo" class="w-10 h-10 rounded-full object-contain">
+                <h1 class="text-xl font-bold">Sniffle</h1>
+            </a>
         </div>
         <button id="languageToggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 language-toggle transition-all" aria-label="Toggle language">
-            <!-- Иконка будет установлена JS -->
         </button>
     </header>
 
@@ -49,7 +50,7 @@
                 <a href="#pricing" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-block">
                     Get Started
                 </a>
-                <a href="dev.html" class="px-8 py-4 font-semibold rounded-xl border-2 border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 transform hover:-translate-y-1 transition-all duration-300 inline-block">
+                <a href="#features" class="px-8 py-4 font-semibold rounded-xl border-2 border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 transform hover:-translate-y-1 transition-all duration-300 inline-block">
                     Learn More
                 </a>
             </div>
@@ -57,7 +58,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 px-6 bg-white dark:bg-gray-800">
+    <section id="features" class="py-20 px-6 bg-white dark:bg-gray-800">
         <div class="max-w-6xl mx-auto">
             <h2 id="features-title" class="text-3xl md:text-4xl font-bold text-center mb-16">Features</h2>
             
@@ -295,15 +296,14 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-2 mb-6 md:mb-0">
-                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">{/}</span>
-                    </div>
+                    <!-- logo -->
+                    <img src="static/images/sniffle-logo.png" alt="Sniffle Bot Logo" class="w-10 h-10 rounded-full object-contain">
                     <h2 class="text-xl font-bold">Sniffle</h2>
                 </div>
                 
                 <div class="flex space-x-6">
-                    <a href="dev.html" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Terms</a>
-                    <a href="dev.html" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Privacy</a>
+                    <a href="index.html" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors font-medium">Main</a>
+                    <a href="terms.html" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Terms</a>
                     <a href="mailto:sniffle@inbox.eu" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Support</a>
                 </div>
             </div>
